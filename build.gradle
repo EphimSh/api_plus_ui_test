@@ -69,9 +69,3 @@ tasks.withType(Test).configureEach {
 test {
     useJUnitPlatform()
 }
-
-task api_test(type: Test){
-    useJUnitPlatform{
-        includeTags 'api'
-    }
-}

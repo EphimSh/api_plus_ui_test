@@ -1,4 +1,4 @@
-package guru.qa.tests.helpers;
+package guru.qa.tests.demowebshop.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;

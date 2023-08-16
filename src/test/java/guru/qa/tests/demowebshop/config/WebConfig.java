@@ -1,4 +1,4 @@
-package guru.qa.tests.config;
+package guru.qa.tests.demowebshop.config;
 
 import org.aeonbits.owner.Config;
 

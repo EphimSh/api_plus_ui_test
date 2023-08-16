@@ -1,4 +1,4 @@
-package guru.qa.tests.tests;
+package guru.qa.tests.demowebshop.tests;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;

@@ -1,8 +1,8 @@
-package guru.qa.tests.tests;
+package guru.qa.tests.demowebshop.tests;
 
 import com.codeborne.selenide.Configuration;
 
-import guru.qa.tests.config.WebConfig;
+import guru.qa.tests.demowebshop.config.WebConfig;
 import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeAll;
