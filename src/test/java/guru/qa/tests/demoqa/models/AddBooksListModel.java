@@ -9,10 +9,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class AddBooksListModel {
-    String userId;
-
+    private String userId;
     @JsonProperty("collectionOfIsbns")
-    List<IsbnModel> booksCollection;
-
-
+    private List<IsbnModel> booksCollection;
 }

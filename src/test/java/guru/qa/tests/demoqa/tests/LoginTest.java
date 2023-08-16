@@ -9,11 +9,9 @@ import static guru.qa.tests.demoqa.tests.TestData.profilePage;
 
 
 public class LoginTest extends TestBase {
-
     @Test
     void successfulLogin() {
         AuthModel authModel = AuthorizationAPI.login(credentials);
-
         profilePage.openWithCookieDrop(authModel);
         profilePage.checkUsername(credentials.getUserName());
     }

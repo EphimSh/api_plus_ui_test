@@ -7,7 +7,7 @@ import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.given;
 
 public class BooksAPI {
-    public static void deleteAllBooks(String userId, String token){
+    public static void deleteAllBooks(String userId, String token) {
         given()
                 .accept("application/json")
                 .header("Authorization", "Bearer " + token)
@@ -19,7 +19,7 @@ public class BooksAPI {
                 .statusCode(204);
     }
 
-    public static void addBooks(String token, AddBooksListModel booksList){
+    public static void addBooks(String token, AddBooksListModel booksList) {
         given()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer " + token)
@@ -30,7 +30,7 @@ public class BooksAPI {
                 .statusCode(201);
     }
 
-    public static void deleteBook(BookModel book, String token){
+    public static void deleteBook(BookModel book, String token) {
         given()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer " + token)

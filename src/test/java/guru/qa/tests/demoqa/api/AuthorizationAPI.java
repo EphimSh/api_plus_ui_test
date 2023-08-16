@@ -7,8 +7,8 @@ import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.given;
 
 public class AuthorizationAPI {
-    public static AuthModel login(CredentialsModel credentials){
-        return  given()
+    public static AuthModel login(CredentialsModel credentials) {
+        return given()
                 .body(credentials)
                 .contentType(ContentType.JSON)
                 .when()
@@ -18,5 +18,4 @@ public class AuthorizationAPI {
                 .extract()
                 .as(AuthModel.class);
     }
-
 }

@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class BookModel {
-    String isbn;
-    String userId;
+    private String isbn;
+    private String userId;
 }

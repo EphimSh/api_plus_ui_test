@@ -16,7 +16,6 @@ public class ProfilePage {
         getWebDriver().manage().addCookie(new Cookie("userID", authModel.getUserId()));
         getWebDriver().manage().addCookie(new Cookie("token", authModel.getToken()));
         getWebDriver().manage().addCookie(new Cookie("expires", authModel.getExpires()));
-
         open("/profile");
         return this;
     }
